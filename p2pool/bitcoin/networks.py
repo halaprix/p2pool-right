@@ -46,10 +46,10 @@ nets = dict(
         DUST_THRESHOLD=0.001e8,
     ),
  rightcoin=math.Object(
-        P2P_PREFIX='xx'.decode('hex'),
-        P2P_PORT=xx,
-        ADDRESS_VERSION=xx,
-        RPC_PORT=xx,
+        P2P_PREFIX='abcabaac'.decode('hex'),
+        P2P_PORT=15105,
+        ADDRESS_VERSION=60,
+        RPC_PORT=15106,
         RPC_CHECK=defer.inlineCallbacks(lambda bitcoind: defer.returnValue(
             'rightcoinaddress' in (yield bitcoind.rpc_help()) and
             not (yield bitcoind.rpc_getinfo())['testnet']

@@ -67,7 +67,7 @@ nets = dict(
         DUMB_SCRYPT_DIFF=1,
         DUST_THRESHOLD=0.001e8,
     ),
-antarcticcoin=math.Object(
+antarcticCoin=math.Object(
         P2P_PREFIX='fec3b9de'.decode('hex'),
         P2P_PORT=9164,
         ADDRESS_VERSION=23,
